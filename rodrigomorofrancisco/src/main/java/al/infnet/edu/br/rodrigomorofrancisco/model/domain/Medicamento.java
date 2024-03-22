@@ -51,4 +51,9 @@ public class Medicamento {
     public double calcularValorTotalEstoque() {
         return this.preco * this.estoque;
     }
+    
+    public void aumentarEstoque(int quantidade) {
+        this.estoque += quantidade;
+    }
+
 }

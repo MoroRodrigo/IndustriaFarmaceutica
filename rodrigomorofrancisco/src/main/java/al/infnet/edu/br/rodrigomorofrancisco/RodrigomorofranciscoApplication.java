@@ -26,6 +26,11 @@ public class RodrigomorofranciscoApplication {
         System.out.println("Preço: " + medicamento2.getPreco());
         System.out.println("Estoque: " + medicamento2.getEstoque());
         System.out.println("Valor total do estoque: " + medicamento2.calcularValorTotalEstoque());
+        
+     // Aumentando o estoque do medicamento 1 em 50 unidades
+        medicamento1.aumentarEstoque(50);
+        System.out.println("\nEstoque do Medicamento 1 após aumento: " + medicamento1.getEstoque());
+        System.out.println("Valor total do estoque do Medicamento 1 após aumento: R$" + medicamento1.calcularValorTotalEstoque());
 	}
 
 }
